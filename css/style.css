@@ -1,0 +1,56 @@
+/*global elements*/
+/*header */
+body {
+  margin: 0;
+  max-width: 100%;
+}
+img {
+  max-width: 100%;
+}
+nav {
+  display: none;
+}
+header img {
+  max-width: 50px;
+  grid-column: 2/3;
+  margin: 0 auto;
+}
+header i {
+  grid-column: 1;
+  grid-row: 1;
+  margin: auto 20px;
+}
+header {
+  display: grid;
+  background-color: #f58607;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+footer {
+  background-color: #f58607;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto;
+}
+#copy {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  text-align: center;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+a {
+  color: black;
+}
+h1,
+h2,
+h3,
+h4,
+a {
+  letter-spacing: 0.05em;
+  font-family: "Work sans", sans-serif;
+}
+p {
+  font-family: "IBM Plex Sans", sans-serif;
+}
