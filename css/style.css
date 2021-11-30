@@ -51,6 +51,11 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr auto;
+  align-items: center;
+}
+#pages{
+  text-align: center;
+  grid-row: 1/3;
 }
 #copy {
   grid-column: 1/4;
