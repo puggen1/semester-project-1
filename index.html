@@ -14,7 +14,10 @@
 <body>
     <header>
         <img src="/images/icon-1719742.svg" alt="logo">
+        <input type="checkbox" id="navbutton">
+        <label for="navbutton">
         <i class="fas fa-bars"></i>
+        </label>
         <nav>
             <a href="#">Home</a>
             <a href="#">info</a>
@@ -25,33 +28,49 @@
     </header>
     <main>
         <article id="hero">
+            <div class="hero-text">
+            <h1>Community Science Museum</h1>
+            </div>
             <img src="/images/mammoth-1257288_1920.jpg" alt="Mammoth skeleton">
-            <div class="sphere green">
-                <h1>Community Science Museum</h1>
+            <div class="sphere green hidden">
                 <p>text comes here</p>
                 <a class="cta red">Read More</a>
             </div>
         </article>
         <article id="exhibits">
+            <div class="orange">
             <h2>Our exhibits</h2>
+        </div>
             <section>
                 <div class="img-box">
+                    <div class="top-text">
                     <h3>Cosmology</h3>
+                    </div>
                     <img src="/images/celso-405219.jpg" alt="pictures of the moon in diffrent times of an month">
+                    <div class="bot-text">
                     <p>info comes here</p>
-                    <a class="cta">Show more</a>
+                    <a href="#" class="cta red">Show more</a>
+                </div>
                 </div>
                 <div class="img-box">
-                    <h3>Biology and medicine</h3>
+                    <div class="top-text">
+                    <h3 class="black">Biology and medicine</h3>
+                    </div>
                     <img src="/images/heart-2607178_1920.jpg" alt="3d-printed heart">
+                    <div class="bot-text">
                     <p>info comes here</p>
-                    <a class="cta">Show more</a>
+                    <a href="#" class="cta red">Show more</a>
+                    </div>
                 </div>
                 <div class="img-box">
+                    <div class="top-text">
                     <h3> Robotics and AI</h3>
+                    </div>
                     <img src="/images/scientific-2040795_1280.jpg" alt="futuristic looking machine">
+                    <div class="bot-text">
                     <p>info comes here</p>
-                    <a class="cta">Show more</a>
+                    <a href="#" class="cta red">Show more</a>
+                </div>
                 </div>
             </section>
             <a class="cta white">view all</a>
@@ -59,12 +78,12 @@
         <article id="info">
             <h3>Info</h3>
             <i class="fas fa-info-circle"></i>
-            <section>
-                <a class="cta white">everyone</a>
-                <a class="cta white">Kids</a>
-                <a class="cta white">Parents</a>
-                <a class="cta white">Teachers</a>
-                <a class="cta white">Researchers</a>
+            <section class="info-cta grid">
+                <a href="info.html#everyone" id="everyone" class="cta white">everyone</a>
+                <a href="info.html#kids" id="kids" class="cta white">Kids</a>
+                <a href="info.html#parents" id="parents" class="cta white">Parents</a>
+                <a href="info.html#teachers" id="teachers" class="cta white">Teachers</a>
+                <a href="info.html#researchers" id="researchers" class="cta white">Researchers</a>
             </section>
         </article>
         <article id="events">
@@ -109,36 +128,35 @@
                 </div>
             </section>
         </article>
-        <footer>
-            <div>
-                <h4>
-                    Opening Hours:
-                </h4>
-                <ul>
-                    <li>Monday: Closed</li>
-                    <li>Tuesday:10:00-16:00</li>
-                    <li>Wednesday:10:00-16:00</li>
-                    <li>Thursday:10:00-16:00</li>
-                    <li>Friday: 10:00-16:00</li>
-                    <li>Saturday: 09:00-16:00</li>
-                    <li>Sunday: 09:00-13:00</li>
-                </ul>
-            </div>
-            <div>
-                <p>Steinsvikvegen 430, 5239 Rådal</p>
-            </div>
-            <div>
-                <h4>pages:</h4>
-                <ul>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">info</a></li>
-                    <li><a href="#">exhibits</a></li>
-                </ul>
-            </div>
-            <p id="copy">(C)opyright: Community science Museum 2021</p>
-        </footer>
     </main>
-    
+    <footer>
+        <div>
+            <h4>
+                Opening Hours:
+            </h4>
+            <ul>
+                <li>Monday: Closed</li>
+                <li>Tuesday:10:00-16:00</li>
+                <li>Wednesday:10:00-16:00</li>
+                <li>Thursday:10:00-16:00</li>
+                <li>Friday: 10:00-16:00</li>
+                <li>Saturday: 09:00-16:00</li>
+                <li>Sunday: 09:00-13:00</li>
+            </ul>
+        </div>
+        <div>
+            <p>Steinsvikvegen 430, 5239 Rådal</p>
+        </div>
+        <div>
+            <h4>pages:</h4>
+            <ul>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">info</a></li>
+                <li><a href="#">exhibits</a></li>
+            </ul>
+        </div>
+        <p id="copy">(C)opyright: Community science Museum 2021</p>
+    </footer>
 </body>
 </html>
