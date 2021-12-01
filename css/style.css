@@ -191,10 +191,12 @@ p {
 .img-box {
   position: relative;
 }
-#exhibits {
-  display: flex;
+#exhibits,
+.exhibits {
   flex-direction: column;
+  align-items: center;
 }
+
 .top-text {
   position: absolute;
   color: white;
@@ -272,7 +274,7 @@ p {
   flex-direction: column;
 }
 /* info*/
-#explore{
+#info-page{
   flex-direction: column;
   align-items: center;
   margin-bottom: 10px;
