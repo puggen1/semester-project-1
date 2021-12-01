@@ -79,17 +79,19 @@ a {
   font-family: "Work sans", sans-serif;
   text-align: center;
 }
-h1{
+h1,
+h3{
   margin: 10px auto;
 }
 p {
   font-family: "IBM Plex Sans", sans-serif;
 }
 .cta {
-  padding: 7% 12%;
+  padding: 10px 7%;
   color: white;
   border-radius: 2px;
   font-size: 12px;
+  align-self: center;
 }
 .red {
   background-color: #a81e36;
@@ -97,7 +99,9 @@ p {
 .orange {
   background-color: #f58607;
 }
-
+.black-border{
+  border: solid black 1px;
+}
 .white {
   /*background-color: white;*/
   color: white;
@@ -203,7 +207,7 @@ p {
   position: absolute;
   display: grid;
   left: 50%;
-  top: 80%;
+  top: 70%;
   transform: translate(-50%, -50%);
   color: white;
 }
@@ -219,14 +223,11 @@ p {
 .visit-cta {
   grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
   grid-template-areas:
-    ". everyone everyone . parents parents ."
-    ". kids kids . teachers teachers ."
-    ". . researchers researchers researchers . .";
+    ". teachers teachers  . parents parents ."
+    ". kids kids . researchers researchers .";
   gap: 10px;
 }
-#everyone {
-  grid-area: everyone;
-}
+
 #parents {
   grid-area: parents;
 }
@@ -238,6 +239,7 @@ p {
 }
 #researchers {
   grid-area: researchers;
+  padding: 10px 0;
 }
 /* sphere with underline and white */
 .sphere p {
