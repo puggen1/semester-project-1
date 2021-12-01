@@ -207,16 +207,16 @@ p {
   transform: translate(-50%, -50%);
   color: white;
 }
-#info {
+#visit {
   display: flex;
   flex-direction: column;
   gap: 20px;
   text-align: center;
 }
-#info i {
+#visit i {
   font-size: 3em;
 }
-.info-cta {
+.visit-cta {
   grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
   grid-template-areas:
     ". everyone everyone . parents parents ."
@@ -270,7 +270,7 @@ p {
   flex-direction: column;
 }
 /* info*/
-#info-page{
+#explore{
   flex-direction: column;
   align-items: center;
   margin-bottom: 10px;
