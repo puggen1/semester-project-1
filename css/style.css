@@ -96,6 +96,7 @@ li {
   font-family: "IBM Plex Sans", sans-serif;
   margin: 3px auto;
 }
+
 .cta {
   padding: 10px 7%;
   color: white;
@@ -291,8 +292,8 @@ li {
 #opening {
   flex-direction: column;
 }
-/* info*/
-#info-page {
+/* info/visit*/
+#visit-page {
   flex-direction: column;
   align-items: center;
   margin-bottom: 10px;
@@ -353,9 +354,10 @@ li {
   header {
     grid-template-columns: 0.5fr 2fr 1fr 2fr 0.5fr;
   }
-  header img {
+  header .logo {
     grid-column: 3/4;
   }
+
   input[type="checkbox"]:checked ~ nav {
     flex-direction: row;
     align-items: center;
