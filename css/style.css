@@ -93,10 +93,14 @@ h3 {
 }
 p,
 li {
+  font-size: 0.5rem;
+
   font-family: "IBM Plex Sans", sans-serif;
   margin: 3px auto;
 }
-
+.underline {
+  text-decoration: underline;
+}
 .cta {
   padding: 10px 7%;
   color: white;
@@ -113,13 +117,13 @@ li {
 .orange {
   background-color: #f58607;
 }
+/*border: black solid 1px;*/
 .black-border {
   border: solid black 1px;
 }
 .white {
   /*background-color: white;*/
   color: white;
-  /*border: black solid 1px;*/
 }
 .blue {
   background-color: #288cdc;
@@ -484,6 +488,9 @@ li {
     margin: 10px;
   }
   /*eventpage */
+  #eventpage h1 {
+    border-bottom: #a81e36 solid 1px;
+  }
   #eventpage > article {
     display: grid;
     grid-template-columns: 1fr 1fr;
