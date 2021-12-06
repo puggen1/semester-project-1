@@ -44,10 +44,13 @@ input[type="checkbox"]:checked ~ nav {
   position: absolute;
   background-color: white;
   left: 50%;
-  top: 23%;
+  top: 20%;
   transform: translate(-50%, -50%);
   width: 100%;
   z-index: 1;
+}
+nav a {
+  font-size: 1rem;
 }
 header {
   display: grid;
