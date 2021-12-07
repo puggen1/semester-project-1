@@ -690,8 +690,16 @@ li {
   }
 
   /*events */
+  #eventpage {
+    max-width: 90%;
+  }
   #eventpage .event {
+    border: solid #a81e36 1px;
     grid-template-rows: auto auto auto auto;
+    padding: 5px 0;
+  }
+  #eventpage img {
+    height: 400px;
   }
   #eventpage > .event > .img-box {
     grid-column: 1/2;
@@ -722,12 +730,14 @@ li {
   #global-info {
     grid-row: 2/3;
     max-width: 90%;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    row-gap: 100px;
   }
 
   #global-info div:last-child {
-    grid-column: 2/4;
+    grid-column: 1/3;
+    padding: 0 20%;
   }
   /* about page*/
   #involved {
