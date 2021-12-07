@@ -116,11 +116,13 @@ li {
 .red {
   background-color: #a81e36;
 }
-.orange-text {
+.-text {
   color: #f58607;
 }
-.orange {
+. {
   background-color: #f58607;
+  /* to make headers be the full length also in flex */
+  width: 100%;
 }
 /*border: black solid 1px;*/
 .black-border {
@@ -319,6 +321,7 @@ li {
 #global-info {
   margin: 0 0 0 auto;
   max-width: 80%;
+  grid-template-columns: auto;
 }
 #global-info div {
   display: grid;
@@ -550,131 +553,182 @@ li {
   }
 }
 /*desktop*/
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
   /* global things */
   a {
     font-size: 1rem;
   }
-  h1,h2,h3,h4{
+  h1,
+  h2,
+  h3,
+  h4 {
     font-size: 2rem;
   }
   p,
   li {
     font-size: 1rem;
   }
-  
+
   /*show navigation and right header layout */
-  header{
+  header {
     grid-template-columns: 0.2fr 1fr 1fr;
     align-items: center;
   }
   input,
-  label{
+  label {
     display: none;
   }
-  nav{
+  nav {
     display: flex;
-    gap: 15px;
+    gap: 5%;
     grid-column: 3/4;
   }
-  header .logo{
+  header .logo {
     grid-column: 1/2;
   }
+  /*footer */
+  footer {
+    align-items: center;
+    justify-items: center;
+  }
   /*hero on landingpage */
-  #landingpage #hero{
+  #landingpage #hero {
+    display: block;
     grid-template-columns: 1fr;
     max-width: 90%;
     border: solid 1px #a81e36;
     padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
-  #hero .sphere{
+  #hero .sphere {
     background-color: #13f5bb;
     border-radius: 50%;
     border-color: transparent;
-    position: relative;
-    max-width: 100px;
-    top: 10%;
-    left: 10%;
-    transform: translate(50%, 50%);
-  }
-  #landingpage #hero img{
     position: absolute;
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    top: 45%;
+    left: 0%;
+    transform: translate(50%, 50%);
+    row-gap: 20px;
   }
-  
-  /* landingpage exhibit*/
-  #exhibit article{
+  #landingpage #hero img {
+    position: relative;
     max-width: 100%;
-  }
-  #exhibit .img-box{
-    max-width: 30%;
   }
 
+  /* landingpage exhibit*/
+  #exhibit {
+    max-width: 100%;
+  }
+  #exhibits section {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+  }
+  #exhibits .img-box {
+  }
+  /* visit cta frontpage */
+  .visit-cta {
+    grid-template-columns: 0.5fr repeat(4, 1fr) 0.5fr;
+    grid-template-areas: ". kids teachers parents researchers .";
+    column-gap: 20px;
+  }
+  /* event section frontpage */
+  #events section {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding: 0 10px;
+  }
+  #events section div:first-child {
+    display: none;
+  }
   /*explore*/
-  #explore section{
+  #explore {
+    row-gap: 10px;
+  }
+  #explore section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-top: #a81e36 solid 1px;
     border-bottom: #a81e36 solid 1px;
     margin-bottom: 20px;
-    background-color: #e1e1e1;
+    background-color: #f5f5f5;
   }
-  #explore .text{
+  #explore .text {
+    display: flex;
+    flex-direction: column;
     border: none;
+    justify-content: center;
+    padding: 0 30px;
   }
- /*exhibits*/
- .exhibits .side-border p{
-   padding-right: 20px;
-   border-right: #a81e36 solid 1px;
- }
- /*events */
- #eventpage .event{
-   grid-template-rows: auto auto auto auto;
- }
- #eventpage > .event > .img-box{
-  grid-column: 1/2;
-  grid-row: 1/5;
- }
- #eventpage > .event > p {
-  grid-row: 2/3;
-  grid-column: 2/3;
-}
-#eventpage > .event > h4 {
-  grid-row: 3/4;
-  grid-column: 2/3;
-}
-#eventpage > .event > .sphere {
-  grid-row: 4/5;
-  grid-column: 2/3;
-}
-/*visit page */
-#visit-page{
-  max-width: 90%;
-  border: #a81e36 solid 1px;
-  margin-top: 10px;
-  padding-bottom: 10px;
-}
-#visit-page h1{
-  grid-row: -1;
-}
-#global-info{
-  grid-row: 2/3;
-  max-width: 90%;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
-}
+  #explore section img {
+    max-height: 600px;
+  }
+  #explore .text h3 {
+    grid-column: 1/2;
+  }
+  #explore .text p:first-of-type {
+    border-right: none;
+  }
+  .big {
+    width: 75%;
+  }
+  /*exhibits*/
+  .exhibits .side-border p {
+    padding-right: 20px;
+    border-right: #a81e36 solid 1px;
+  }
 
-}
-#global-info div:last-child{
-  grid-column: 2/4;
-}
-/* about page*/
-#involved{
-grid-template-columns: 1fr 1fr 1fr;
-}
-#involved section:last-child {
-  grid-column: 3/4;
+  /*events */
+  #eventpage .event {
+    grid-template-rows: auto auto auto auto;
+  }
+  #eventpage > .event > .img-box {
+    grid-column: 1/2;
+    grid-row: 1/5;
+  }
+  #eventpage > .event > p {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  #eventpage > .event > h4 {
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+  #eventpage > .event > .sphere {
+    grid-row: 4/5;
+    grid-column: 2/3;
+  }
+  /*visit page */
+  #visit-page {
+    max-width: 90%;
+    border: #a81e36 solid 1px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
+  #visit-page h1 {
+    grid-row: -1;
+  }
+  #global-info {
+    grid-row: 2/3;
+    max-width: 90%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
 
-  padding:0;
-}
+  #global-info div:last-child {
+    grid-column: 2/4;
+  }
+  /* about page*/
+  #involved {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #involved section:last-child {
+    grid-column: 3/4;
+
+    padding: 0;
+  }
 }
