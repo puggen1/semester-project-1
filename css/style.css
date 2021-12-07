@@ -550,3 +550,37 @@ li {
     padding: 10px 70px;
   }
 }
+/*desktop*/
+@media screen and (min-width: 1200px){
+  /*show navigation and right header layout */
+  input,
+  label{
+    display: none;
+  }
+  nav{
+    display: block;
+    grid-column: 3/4;
+  }
+  .logo{
+    grid-column: 1/2;
+  }
+  /*hero on landingpage */
+  #landingpage #hero{
+    grid-template-columns: 1fr;
+  }
+  #hero .sphere{
+    background-color: #13f5bb;
+    border-radius: 50%;
+    border-color: transparent;
+    position: relative;
+    top: 50%;
+    left: 10%;
+    transform: translate(50%, 50%);
+  }
+  #landingpage #hero img{
+    position: absolute;
+    max-width: 100%;
+  }
+
+  
+}
