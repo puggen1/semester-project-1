@@ -620,9 +620,9 @@ li {
     height: 100%;
     max-width: 300px;
     max-height: 300px;
-    top: 45%;
-    left: 0%;
-    transform: translate(50%, 50%);
+    top: 75%;
+    left: 20%;
+    transform: translate(-50%, -50%);
     row-gap: 20px;
   }
   #landingpage #hero img {
