@@ -64,6 +64,8 @@ footer {
   grid-template-rows: 1fr auto;
   justify-items: right;
   padding: 0 10px;
+  align-items: center;
+  justify-items: right;
 }
 footer h4 {
   text-align: left;
@@ -167,7 +169,7 @@ li {
   border: solid black 1px;
   border-radius: 10px;
   display: grid;
-  grid-template-columns: 0.5fr 0.5fr 1fr 0.5fr 0.5fr;
+  grid-template-columns: 0.5fr 0.5fr 1.5fr 0.5fr 0.5fr;
   grid-template-rows: auto auto auto;
   align-items: end;
   justify-items: center;
@@ -597,10 +599,10 @@ li {
     grid-column: 1/2;
   }
   /*footer */
-  footer {
-    align-items: center;
+  footer{
     justify-items: center;
   }
+  
   /*hero on landingpage */
   #landingpage #hero {
     display: block;
@@ -651,6 +653,12 @@ li {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
     padding: 0 10px;
+  }
+  .date-box{
+    margin: 10px 40px;
+  }
+  .date-box a{
+    font-size: 0.7em ;
   }
   /*explore*/
   #explore {
