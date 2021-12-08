@@ -197,7 +197,7 @@ li {
 .image {
   grid-column: 1/6;
   grid-row: 1/2;
-  background-color: #E1E1E1;
+  background-color: #e1e1e1;
   padding: 0 20%;
   border-radius: 10px 10px 0 0;
   height: 100%;
@@ -295,7 +295,7 @@ li {
   padding: 3px 5px;
 }
 /* event on mobile because of bug...? */
-#events .boxes{
+#events .boxes {
   max-height: 100%;
 }
 
@@ -351,9 +351,6 @@ li {
   margin: auto auto;
   font-size: 7vw;
 }
-#kids {
-  border-top: solid #a81e36 1px;
-}
 .text {
   border-top: solid 1px #a81e36;
   border-bottom: solid 1px #a81e36;
@@ -407,11 +404,11 @@ li {
     grid-row: 1/3;
     background-color: transparent;
     position: relative;
-  }/*footer*/
-  footer{
+  } /*footer*/
+  footer {
     justify-items: center;
   }
-  footer p{
+  footer p {
     grid-column: 1/4;
   }
   /* hero image */
@@ -585,12 +582,18 @@ li {
   h4 {
     font-size: 1.8rem;
   }
+  .orange h2 {
+    margin: 0 10px;
+  }
   p,
   li {
     font-size: 1rem;
   }
   .cta {
     text-decoration: none;
+  }
+  .bot-text a {
+    width: 50%;
   }
   .cta:hover {
     text-decoration: underline;
@@ -614,15 +617,16 @@ li {
     grid-column: 1/2;
   }
   /*footer */
-  footer{
+  footer {
     justify-items: center;
   }
-  
+  #landingpage {
+    max-width: 90%;
+  }
   /*hero on landingpage */
   #landingpage #hero {
     display: block;
     grid-template-columns: 1fr;
-    max-width: 90%;
     border: solid 1px #a81e36;
     padding: 20px;
     margin-top: 10px;
@@ -663,20 +667,21 @@ li {
     grid-template-areas: ". kids teachers parents researchers .";
     column-gap: 20px;
   }
-  #exhibits .bot-text{
+  #exhibits .bot-text {
     top: 75%;
   }
   /* event section frontpage */
   #events .boxes {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
-    padding: 0 10px;
+    padding: 0 40px;
+    gap: 15px;
   }
-  .date-box{
+  .date-box {
     margin: 10px 40px;
   }
-  .date-box a{
-    font-size: 0.7em ;
+  .date-box a {
+    font-size: 0.7em;
   }
   /*explore*/
   #explore {
@@ -689,7 +694,7 @@ li {
     border-bottom: #a81e36 solid 1px;
     margin-bottom: 20px;
     background-color: #f5f5f5;
-    align-items:center;
+    align-items: center;
   }
   #explore .text {
     display: flex;
