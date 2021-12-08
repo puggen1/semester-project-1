@@ -196,6 +196,7 @@ li {
 }
 .image {
   grid-column: 1/6;
+  grid-row: 1/2;
   background-color: #E1E1E1;
   padding: 0 20%;
   border-radius: 10px 10px 0 0;
