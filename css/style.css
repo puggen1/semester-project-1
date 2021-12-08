@@ -247,7 +247,7 @@ li {
   position: absolute;
   display: grid;
   left: 50%;
-  top: 70%;
+  top: 80%;
   transform: translate(-50%, -50%);
   color: white;
 }
@@ -654,6 +654,9 @@ li {
     grid-template-columns: 0.5fr repeat(4, 1fr) 0.5fr;
     grid-template-areas: ". kids teachers parents researchers .";
     column-gap: 20px;
+  }
+  #exhibits .bot-text{
+    top: 75%;
   }
   /* event section frontpage */
   #events .boxes {
