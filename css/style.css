@@ -620,8 +620,13 @@ li {
   footer {
     justify-items: center;
   }
-  #landingpage {
+  /* making all the  diffrent sections 90% width, but without headers*/
+  #hero,
+  #exhibits section,
+  #visit section,
+  #events .boxes {
     max-width: 90%;
+    margin: 0 auto;
   }
   /*hero on landingpage */
   #landingpage #hero {
@@ -665,7 +670,10 @@ li {
   .visit-cta {
     grid-template-columns: 0.5fr repeat(4, 1fr) 0.5fr;
     grid-template-areas: ". kids teachers parents researchers .";
-    column-gap: 20px;
+    column-gap: 100px;
+  }
+  .visit-cta a {
+    width: 200px;
   }
   #exhibits .bot-text {
     top: 75%;
