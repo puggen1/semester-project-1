@@ -29,9 +29,14 @@
             <a href="about-museum.html">about</a>
         </nav>
     </header>
-    <main id="about" class="flex">
+    <main id="about" class="flex center">
         <h1>About Museum</h1>
-        <img src="/images/scott-webb-102825.jpg" alt="Our entrance hall, with a huge whale skeleton hanging from the ceiling">
+        <picture>
+            <source srcset="/images/about-pc.jpg" media="(min-width: 1024px)" alt="our art wall outside the museum, with diffrent colors displaying &quot museum &quot">
+            <source srcset="/images/about-tablet.jpg" media="(min-width: 768px)" alt="our art wall outside the museum, with diffrent colors displaying &quot museum &quot">
+            <img src="/images/about-mobile.jpg" alt="our art wall outside the museum, with diffrent colors displaying &quot museum &quot">
+        </picture>
+        
         <div class="about grid">
             <h2>explore together</h2>
             <p> 
