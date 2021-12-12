@@ -31,8 +31,11 @@
     </header>
     <main id="explore" class="flex">
         <h1>Explore</h1>
-        <img class="big" src="/images/explore-hero.jpg" alt="unknown">
-        
+        <picture>
+            <source srcset="explore-hero-tablet.jpg" media="(min-width: 756px)" alt="girl lookin at math equations">
+            <source srcset="explore-hero-pc.jpg" media="(min-width: 1024px)" alt="girl lookin at math equations">
+            <img class="big" src="/images/explore-hero.jpg" alt="girl lookin at math equations">
+        </picture>
         <section id="kids">
             <div class="info-img center">
                 <div class="sphere blue onimg">
