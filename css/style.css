@@ -113,6 +113,7 @@ li {
   color: white;
   border-radius: 2px;
   align-self: center;
+  white-space: nowrap;
 }
 .red {
   background-color: #a81e36;
