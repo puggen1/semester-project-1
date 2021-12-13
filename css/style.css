@@ -275,18 +275,23 @@ li {
   gap: 10px;
   justify-items: center;
 }
-
-#parents {
+.visit-cta a{
+  width: 100px;
+}
+#front-parents {
   grid-area: parents;
 }
-#kids {
+#front-kids {
   grid-area: kids;
 }
-#teachers {
+#front-teachers {
   grid-area: teachers;
 }
-#researchers {
+#front-researchers {
   grid-area: researchers;
+  
+}
+#researchers{
   padding: 10px 0;
 }
 /* sphere with underline and white */
