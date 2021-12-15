@@ -276,7 +276,7 @@ li {
   gap: 10px;
   justify-items: center;
 }
-.visit-cta a{
+.visit-cta a {
   width: 100px;
 }
 #front-parents {
@@ -290,9 +290,8 @@ li {
 }
 #front-researchers {
   grid-area: researchers;
-  
 }
-#researchers{
+#researchers {
   padding: 10px 0;
 }
 /* sphere with underline and white */
@@ -469,23 +468,41 @@ li {
     padding: 0 50px;
     gap: 50px;
   }
-  /* .date-box {
+  .date-box {
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: auto auto auto;
+    align-items: center;
+    justify-items: normal;
+    padding-bottom: 0px;
   }
 
   .date {
     grid-column: 1/2;
     grid-row: 1/2;
+    border-bottom: solid black 1px;
+    border-right: solid black 1px;
+    height: 100%;
+  }
+  .date p,
+  .time p {
+    margin: auto auto;
   }
   .time {
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 2/4;
+    border-right: solid 1px black;
+    height: 100%;
   }
   .image {
     grid-column: 2/4;
     grid-row: 1/2;
     padding: 0;
+  }
+
+  .image img {
+    border-radius: 0px 9px 0px 0px;
+
+    border-bottom: solid black 1px;
   }
   .date-box h3 {
     grid-column: 2/4;
@@ -494,6 +511,7 @@ li {
   .date-box section {
     grid-column: 2/4;
     grid-row: 3/4;
+    padding-bottom: 10px;
   }
   */
   /*explore page */
@@ -712,8 +730,6 @@ li {
     grid-template-rows: auto auto;
     padding: 0 40px;
     gap: 15px;
-  }
-  
   }
   .date-box {
     margin: 10px 40px;
