@@ -31,7 +31,6 @@ header .logo {
 }
 header img {
   max-width: 50px;
-  display: contents;
 }
 header label {
   grid-column: 1;
