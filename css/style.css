@@ -146,6 +146,10 @@ li {
 .cta:hover {
   text-decoration: underline;
 }
+.active {
+  text-decoration: none;
+  font-weight: bolder;
+}
 .sphere {
   height: 100px;
   width: 100px;
@@ -395,6 +399,9 @@ li {
 /* tablet */
 
 @media screen and (min-width: 768px) {
+  .active {
+    color: white;
+  }
   .hidden {
     display: block;
   }
