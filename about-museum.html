@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About the Museum | Community Scienece Museum</title>
+    <meta name="description" content="Learn more about our museum, or get involved with what we do!">
+    <link rel="icon" href="/images/icon-1719742.svg">
     <script src="https://kit.fontawesome.com/17aae2f01b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,12 +28,17 @@
             <a href="exhibits.html">exhibits</a>
             <a href="visit.html">Visit</a>
             <a href="events.html">events</a>
-            <a href="about-museum.html">about</a>
+            <a href="about-museum.html" class="active">about</a>
         </nav>
     </header>
-    <main id="about" class="flex">
+    <main id="about" class="flex center">
         <h1>About Museum</h1>
-        <img src="/images/scott-webb-102825.jpg" alt="Our entrance hall, with a huge whale skeleton hanging from the ceiling">
+        <picture>
+            <source srcset="/images/about-pc.jpg" media="(min-width: 1024px)" alt="our art wall outside the museum, with diffrent colors displaying &quot museum &quot">
+            <source srcset="/images/about-tablet.jpg" media="(min-width: 768px)" alt="our art wall outside the museum, with diffrent colors displaying &quot museum &quot">
+            <img src="/images/about-mobile.jpg" alt="our art wall outside the museum, with diffrent colors displaying &quot museum &quot">
+        </picture>
+        
         <div class="about grid">
             <h2>explore together</h2>
             <p> 
@@ -86,6 +93,7 @@
             </ul>
         </div>
         <div>
+            <h4>Location</h4>
             <p>Steinsvikvegen 430, 5239 Rådal</p>
         </div>
         <div>

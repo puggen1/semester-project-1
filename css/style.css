@@ -18,6 +18,7 @@ main {
 }
 img {
   max-width: 100%;
+  display: block;
 }
 /*header */
 nav {
@@ -42,12 +43,13 @@ input[type="checkbox"]:checked ~ nav {
   flex-direction: column;
   gap: 10px;
   position: absolute;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.96);
   left: 50%;
-  top: 20%;
+  top: 15%;
+  padding-bottom: 5px;
   transform: translate(-50%, -50%);
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 nav a {
   font-size: 1rem;
@@ -63,13 +65,15 @@ footer {
   grid-template-columns: 1fr 0.5fr 1fr;
   grid-template-rows: 1fr auto;
   padding: 0 10px;
-  align-items: center;
-  justify-items: right;
+  align-items: start;
+  justify-items: center;
 }
 footer h4 {
   text-align: left;
 }
-
+footer li {
+  padding: 5px;
+}
 #copy {
   grid-column: 1/4;
   grid-row: 2/3;
@@ -81,7 +85,7 @@ ul {
 }
 a {
   color: black;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
 }
 h1,
 h2,
@@ -99,7 +103,7 @@ h3 {
 }
 p,
 li {
-  font-size: 0.5rem;
+  font-size: 0.8rem;
 
   font-family: "IBM Plex Sans", sans-serif;
   margin: 3px auto;
@@ -113,6 +117,7 @@ li {
   color: white;
   border-radius: 2px;
   align-self: center;
+  white-space: nowrap;
 }
 .red {
   background-color: #a81e36;
@@ -145,6 +150,10 @@ li {
 .cta:hover {
   text-decoration: underline;
 }
+.active {
+  text-decoration: none;
+  font-weight: bolder;
+}
 .sphere {
   height: 100px;
   width: 100px;
@@ -164,7 +173,8 @@ li {
 }
 /* calendar event box for mobile */
 .date-box {
-  margin: 10px 20%;
+  margin: 10px 15%;
+
   border: solid black 1px;
   border-radius: 10px;
   display: grid;
@@ -189,10 +199,12 @@ li {
 .date {
   grid-column: 1/3;
   grid-row: 3/4;
+  text-align: center;
 }
 .time {
   grid-column: 4/6;
   grid-row: 3/4;
+  text-align: center;
 }
 .image {
   grid-column: 1/6;
@@ -273,19 +285,24 @@ li {
     ". teachers teachers  . parents parents ."
     ". kids kids . researchers researchers .";
   gap: 10px;
+  justify-items: center;
 }
-
-#parents {
+.visit-cta a {
+  width: 100px;
+}
+#front-parents {
   grid-area: parents;
 }
-#kids {
+#front-kids {
   grid-area: kids;
 }
-#teachers {
+#front-teachers {
   grid-area: teachers;
 }
-#researchers {
+#front-researchers {
   grid-area: researchers;
+}
+#researchers {
   padding: 10px 0;
 }
 /* sphere with underline and white */
@@ -301,6 +318,7 @@ li {
 
 /* event on event.html */
 .event {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -308,7 +326,6 @@ li {
 }
 /*about museum */
 
-.about,
 #opening,
 #involved {
   max-width: 80%;
@@ -320,6 +337,8 @@ li {
 #about {
   flex-direction: column;
   align-items: center;
+  max-width: 80%;
+  margin-bottom: 10px;
 }
 #opening {
   flex-direction: column;
@@ -375,6 +394,7 @@ li {
 }
 /*event page */
 #eventpage .hero-text {
+  z-index: 1;
   left: 0;
   top: 0;
   transform: translate(0, 0);
@@ -382,10 +402,18 @@ li {
 #eventpage .cta {
   margin-bottom: 10px;
 }
-
+/*for date box on index, too many things made it really hard for me to do this without another media queries */
+@media screen and (min-width: 500px) {
+  .date-box {
+    max-width: 345px;
+    margin: 10px auto;
+  }
+}
 /* tablet */
-
 @media screen and (min-width: 768px) {
+  .active {
+    color: white;
+  }
   .hidden {
     display: block;
   }
@@ -459,23 +487,42 @@ li {
     padding: 0 50px;
     gap: 50px;
   }
-  /* .date-box {
+  .date-box {
+    max-width: none;
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: auto auto auto;
+    align-items: center;
+    justify-items: normal;
+    padding-bottom: 0px;
   }
 
   .date {
     grid-column: 1/2;
     grid-row: 1/2;
+    border-bottom: solid black 1px;
+    border-right: solid black 1px;
+    height: 100%;
+  }
+  .date p,
+  .time p {
+    margin: auto auto;
   }
   .time {
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 2/4;
+    border-right: solid 1px black;
+    height: 100%;
   }
   .image {
     grid-column: 2/4;
     grid-row: 1/2;
     padding: 0;
+  }
+
+  .image img {
+    border-radius: 0px 9px 0px 0px;
+
+    border-bottom: solid black 1px;
   }
   .date-box h3 {
     grid-column: 2/4;
@@ -484,8 +531,12 @@ li {
   .date-box section {
     grid-column: 2/4;
     grid-row: 3/4;
+    padding-bottom: 10px;
   }
-  */
+  /*footer */
+  footer > div:nth-child(2) > h4 {
+    text-align: center;
+  }
   /*explore page */
   #explore {
     max-width: 90%;
@@ -527,15 +578,25 @@ li {
   }
   #eventpage > article > .img-box {
     grid-column: 1/3;
+    grid-row: 2/3;
   }
   #eventpage > article > p {
-    grid-row: 2/4;
+    grid-row: 3/5;
+  }
+  #eventpage .sphere {
+    grid-column: 2/3;
   }
   /*exhibit */
   article.exhibits section.side-border {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+  }
+  .exhibits .sphere {
+    grid-column: 2/3;
+  }
+  .exhibits p {
+    grid-row: 1/3;
   }
   /*visit page */
   #opening {
@@ -547,12 +608,17 @@ li {
     gap: 30px 20px;
     margin-bottom: 20px;
   }
+  #global-info div {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #eaeaea;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
   #global-info div:last-child {
     grid-column: 1/3;
   }
   /*about museum*/
   #about img {
-    width: 80%;
   }
   .about {
     grid-template-columns: 1fr 1fr;
@@ -627,7 +693,6 @@ li {
   /* making all the  diffrent sections 90% width, but without headers*/
   #hero,
   #exhibits section,
-  #visit section,
   #events .boxes {
     max-width: 90%;
     margin: 0 auto;
@@ -650,7 +715,7 @@ li {
     height: 100%;
     max-width: 300px;
     max-height: 300px;
-    top: 75%;
+    top: 65%;
     left: 80%;
     transform: translate(-50%, -50%);
     row-gap: 20px;
@@ -677,7 +742,7 @@ li {
     column-gap: 100px;
   }
   .visit-cta a {
-    width: 200px;
+    width: 100%;
   }
   #exhibits .bot-text {
     top: 75%;
@@ -691,6 +756,10 @@ li {
   }
   .date-box {
     margin: 10px 40px;
+    transition: transform 0.5s;
+  }
+  .date-box:hover {
+    transform: scale(1.1);
   }
   .date-box a {
     font-size: 0.7em;
@@ -724,11 +793,9 @@ li {
   #explore .text p:first-of-type {
     border-right: none;
   }
-  .big {
-    width: 75%;
-  }
+
   /*exhibits*/
-  .exhibits .side-border p {
+  .exhibits .exhibit-text {
     padding-right: 20px;
     border-right: #a81e36 solid 1px;
   }
@@ -793,5 +860,8 @@ li {
     grid-column: 3/4;
 
     padding: 0;
+  }
+  .event .hero-text {
+    grid-column: 2/3;
   }
 }
