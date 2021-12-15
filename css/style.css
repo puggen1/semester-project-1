@@ -63,8 +63,8 @@ footer {
   grid-template-columns: 1fr 0.5fr 1fr;
   grid-template-rows: 1fr auto;
   padding: 0 10px;
-  align-items: center;
-  justify-items: right;
+  align-items: start;
+  justify-items: center;
 }
 footer h4 {
   text-align: left;
@@ -520,7 +520,10 @@ li {
     grid-row: 3/4;
     padding-bottom: 10px;
   }
-  */
+  /*footer */
+  footer > div:nth-child(2) > h4 {
+    text-align: center;
+  }
   /*explore page */
   #explore {
     max-width: 90%;
