@@ -32,6 +32,7 @@ header .logo {
 }
 header img {
   max-width: 50px;
+  display: inline;
 }
 header label {
   grid-column: 1;
@@ -249,7 +250,9 @@ li {
   border-bottom: #a81e36 solid 1px;
   padding-bottom: 5px;
 }
-
+#exhibits > section {
+  margin-bottom: 5px;
+}
 .top-text {
   position: absolute;
   color: white;
@@ -732,6 +735,7 @@ li {
   #exhibits section {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
+    margin-bottom: 10px;
   }
   #exhibits .img-box {
   }
