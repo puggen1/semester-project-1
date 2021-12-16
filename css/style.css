@@ -427,9 +427,6 @@ li {
 }
 /* tablet */
 @media screen and (min-width: 768px) {
-  .active {
-    color: white;
-  }
   .hidden {
     display: block;
   }
@@ -543,7 +540,6 @@ li {
   .date-box h4 {
     grid-column: 2/4;
     grid-row: 2/3;
-    min-height: 68px;
   }
   .date-box section {
     grid-column: 2/4;
@@ -769,11 +765,14 @@ li {
     gap: 15px;
   }
   .date-box {
-    margin: 10px 40px;
+    margin: 10px 0px;
     transition: transform 0.5s;
   }
   .date-box:hover {
     transform: scale(1.1);
+  }
+  .date-box h4 {
+    min-height: 68px;
   }
   .date-box a {
     font-size: 0.7em;
@@ -810,10 +809,13 @@ li {
 
   /*exhibits*/
   .exhibits .exhibit-text {
-    padding-right: 20px;
+    padding: 20px;
     border-right: #a81e36 solid 1px;
     grid-row: 1/3;
     max-width: 425px;
+  }
+  .side-border {
+    padding: 5px 0px;
   }
   .exhibits h3 {
     grid-column: 2/3;
