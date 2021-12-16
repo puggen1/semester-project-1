@@ -887,6 +887,7 @@ li {
 
     padding: 0;
   }
+  /*event page */
   .event .hero-text {
     grid-column: 2/3;
   }
