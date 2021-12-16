@@ -407,6 +407,7 @@ li {
   left: 0;
   top: 0;
   transform: translate(0, 0);
+  margin-top: 0px;
 }
 
 /*for date box on index, too many things made it really hard for me to do this without another media queries */
