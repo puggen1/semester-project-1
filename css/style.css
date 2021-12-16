@@ -870,8 +870,14 @@ li {
     border-bottom: #a81e36 solid 1px;
     margin-bottom: 30px;
   }
+  #visitpage h2 {
+    grid-row: 1/2;
+  }
+  #opening {
+    grid-row: 4/5;
+  }
   #global-info {
-    grid-row: 2/3;
+    grid-row: 3/4;
     max-width: 90%;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
