@@ -371,7 +371,7 @@ li {
   grid-template-rows: auto auto;
   padding: 10px;
   border-radius: 20px;
-  background-color: #eaeaea;
+  background-color: #f5f5f5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #global-info > div > p:first-child {
@@ -543,6 +543,7 @@ li {
   .date-box h4 {
     grid-column: 2/4;
     grid-row: 2/3;
+    min-height: 68px;
   }
   .date-box section {
     grid-column: 2/4;
