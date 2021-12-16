@@ -48,7 +48,7 @@ input[type="checkbox"]:checked ~ nav {
   gap: 10px;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.96);
-  top: 7%;
+  top: 6%;
   padding-bottom: 5px;
   width: 100%;
   z-index: 2;
