@@ -315,9 +315,7 @@ li {
 #front-researchers {
   grid-area: researchers;
 }
-#researchers {
-  padding: 10px 0;
-}
+
 /* sphere with underline and white */
 .sphere p {
   font-size: 0.9rem;
