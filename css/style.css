@@ -609,7 +609,7 @@ li {
   .exhibits .sphere {
     grid-column: 2/3;
   }
-  .exhibits p {
+  .exhibits .exhibit-text {
     grid-row: 1/3;
   }
   /*visit page */
@@ -761,8 +761,8 @@ li {
   #events .boxes {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
-    padding: 15px 40px;
-    gap: 15px;
+    padding: 25px 40px;
+    gap: 5%;
   }
   .date-box {
     margin: 10px 0px;
@@ -853,6 +853,10 @@ li {
   #eventpage > .event > .sphere {
     grid-row: 4/5;
     grid-column: 2/3;
+  }
+  /*side border on event page*/
+  #eventpage .side-border {
+    padding: 5px 10px;
   }
   /*visit page */
   #visit-page {
