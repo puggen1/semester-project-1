@@ -603,9 +603,11 @@ li {
     margin-bottom: 20px;
   }
 
-  #global-info div:last-child {
+  #global-info #admission,
+  #global-info .cta {
     grid-column: 1/3;
   }
+
   /*about museum*/
   .about {
     grid-template-columns: 1fr 1fr;
