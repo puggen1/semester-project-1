@@ -803,9 +803,7 @@ li {
     grid-template-rows: auto auto auto auto;
     padding: 5px 0;
   }
-  #eventpage img {
-    height: 400px;
-  }
+
   #eventpage > .event > .img-box {
     grid-column: 1/2;
     grid-row: 1/5;
