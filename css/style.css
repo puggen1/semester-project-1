@@ -132,9 +132,6 @@ li {
 .red {
   background-color: #a81e36;
 }
-.orange-text {
-  color: #f58607;
-}
 .orange {
   background-color: #f58607;
   /* to make headers be the full length also in flex */
