@@ -70,8 +70,9 @@ footer {
   align-items: start;
   justify-items: center;
 }
-footer h5 {
+.footer {
   text-align: left;
+  font-size: 1.5rem;
 }
 footer li {
   padding: 5px;
@@ -93,6 +94,7 @@ h2,
 h3,
 h4,
 h5,
+.footer,
 a {
   letter-spacing: 0.05em;
   font-family: "Work sans", sans-serif;
