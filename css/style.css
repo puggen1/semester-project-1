@@ -701,6 +701,9 @@ li {
     transform: translate(-50%, -50%);
     row-gap: 20px;
   }
+  #hero .sphere p {
+    padding: 5px 10px;
+  }
   #landingpage #hero img {
     position: relative;
     max-width: 100%;
