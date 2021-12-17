@@ -106,6 +106,7 @@ h2,
 h3 {
   margin: 10px auto;
 }
+
 /* making the smallest headers a little bit bigger. */
 h5 {
   font-size: 1rem;
@@ -800,6 +801,13 @@ li {
   }
   .exhibits .img-box {
     max-width: 80%;
+  }
+  .exhibits .sphere {
+    height: 200px;
+    width: 200px;
+  }
+  .exhibits .sphere .white {
+    font-size: 2rem;
   }
   /*events */
   #eventpage {
