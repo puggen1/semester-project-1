@@ -546,6 +546,7 @@ li {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
   }
+  #explore .text h2,
   #explore .text h3 {
     grid-column: 1/3;
   }
