@@ -182,8 +182,9 @@ li {
 }
 /* calendar event box for mobile */
 .date-box {
-  margin: 10px 15%;
-
+  max-width: 75%;
+  
+  margin-bottom: 10px;
   border: solid black 1px;
   border-radius: 10px;
   display: grid;
@@ -277,6 +278,10 @@ li {
   transform: translate(-50%, -50%);
   color: white;
 }
+.bot-text .contrast{
+color: black;
+background-color: rgba(255, 255, 255, 0.3);
+}
 .bot-text a {
   width: 40%;
 }
@@ -321,6 +326,8 @@ li {
 /* event on mobile because of bug...? */
 #events .boxes {
   max-height: 100%;
+  justify-items: center;
+    row-gap: 20px;
 }
 
 /* event on event.html */
@@ -692,7 +699,7 @@ li {
     margin-bottom: 10px;
   }
   #hero .sphere {
-    background-color: #13f5bb;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 50%;
     border-color: transparent;
     position: absolute;
